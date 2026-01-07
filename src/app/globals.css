@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #fdf2f4;
+  --color-primary-100: #fce7ea;
+  --color-primary-200: #f9d0d9;
+  --color-primary-300: #f4a8ba;
+  --color-primary-400: #ed7896;
+  --color-primary-500: #e24975;
+  --color-primary-600: #cf2c5e;
+  --color-primary-700: #b01e4a;
+  --color-primary-800: #9f1239;
+  --color-primary-900: #881337;
+  --color-primary-950: #4c0519;
+  
+  --color-luxury-gold: #d4af37;
+  --color-luxury-cream: #f8f6f0;
+  --color-luxury-charcoal: #2c2c2c;
+  
+  --font-family-sans: var(--font-inter), Inter, system-ui, sans-serif;
+  --font-family-serif: var(--font-playfair), 'Playfair Display', serif;
+  
+  --animate-fade-in: fadeIn 0.5s ease-in-out;
+  --animate-slide-up: slideUp 0.6s ease-out;
+  --animate-float: float 3s ease-in-out infinite;
+  
+  --shadow-3xl: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    transform: translateY(20px); 
+    opacity: 0; 
+  }
+  to { 
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Custom component classes */
+.btn-primary {
+  @apply bg-primary-800 hover:bg-primary-700 text-white px-6 py-3 rounded-full font-medium transition-all duration-200 shadow-lg hover:shadow-xl;
+}
+
+.btn-secondary {
+  @apply border-2 border-primary-800 text-primary-800 hover:bg-primary-800 hover:text-white px-6 py-3 rounded-full font-medium transition-all duration-200;
+}
+
+.luxury-gradient {
+  @apply bg-gradient-to-br from-primary-800 via-primary-700 to-primary-900;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-primary-800 to-primary-600 bg-clip-text text-transparent;
+}
+
+/* Enhanced luxury effects */
+.shadow-3xl {
+  box-shadow: var(--shadow-3xl);
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hide scrollbars */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Luxury text effects */
+.text-luxury {
+  background: linear-gradient(135deg, #d4af37 0%, #ffd700 50%, #d4af37 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: shimmer 3s ease-in-out infinite;
+}
