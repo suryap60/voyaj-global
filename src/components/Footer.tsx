@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 text-white py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 text-white py-16 full-width">
+      <div className="content-container">
         <div className="grid md:grid-cols-4 gap-8 animate-fade-in">
           {/* Brand */}
           <div className="md:col-span-1">

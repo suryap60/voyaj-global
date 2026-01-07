@@ -92,8 +92,8 @@ export default function ExperienceScroll() {
   }
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-white full-width">
+      <div className="content-container">
         <div className="flex justify-between items-end mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">

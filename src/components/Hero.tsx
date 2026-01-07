@@ -25,7 +25,10 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900">
+    <section className="relative min-h-screen flex items-center justify-center full-width bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900">
+      {/* Full-width background image overlay */}
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1920&h=1080&fit=crop&crop=center')] bg-cover bg-center bg-no-repeat opacity-20"></div>
+      
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-20 w-64 h-64 bg-luxury-gold/10 rounded-full animate-pulse blur-3xl"></div>
@@ -34,9 +37,9 @@ export default function Hero() {
       </div>
 
       {/* Subtle overlay */}
-      <div className="absolute inset-0 bg-black/20"></div>
+      <div className="absolute inset-0 bg-black/40"></div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8">
+      <div className="relative z-10 content-container w-full">
         <div className="grid lg:grid-cols-2 gap-20 items-center min-h-screen py-20">
           
           {/* Left Column - Content */}

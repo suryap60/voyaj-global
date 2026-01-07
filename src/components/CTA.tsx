@@ -1,7 +1,7 @@
 export default function CTA() {
   return (
-    <section className="py-20 bg-gradient-to-br from-primary-800 via-primary-900 to-primary-800">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section className="py-20 bg-gradient-to-br from-primary-800 via-primary-900 to-primary-800 full-width">
+      <div className="max-w-4xl mx-auto content-container text-center">
         <div className="animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready for your next intelligently planned journey?
