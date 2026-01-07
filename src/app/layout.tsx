@@ -19,6 +19,13 @@ export const metadata: Metadata = {
   authors: [{ name: "Voyaj" }],
   creator: "Voyaj",
   publisher: "Voyaj",
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: '32x32' }
+    ],
+    apple: { url: '/icon.svg', type: 'image/svg+xml' },
+  },
   openGraph: {
     title: "Voyaj - The Intelligent Travel Marketplace",
     description: "Redefining travel discovery with agentic AI. The intelligent travel marketplace that understands you better than you understand your own travel desires.",
